@@ -1,0 +1,170 @@
+body {
+    background: rgba(0, 0, 0, 0.90);
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	transition: all 1s ease-in-out;
+}
+
+.carre {
+	font-size: 1.2em;
+	width: 200px;
+	height: 200px;
+	color:#fff;
+	background: red;
+    /* animation: gradient 5s ease infinite; */
+	transition: all 1s ease-in-out;
+	/* opacity: 0; */
+	margin: 10px;
+}
+
+@media screen and (min-width:700px) {
+	.carre {
+		font-size: 1.4em;
+		height: 100vh;
+		width: 33vw;
+		margin: 0;
+	}
+
+	body {
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.carre:nth-child(2) {
+		background: white;
+	}
+
+	.carre:nth-child(1) {
+		background: blue;
+	}
+}
+
+
+
+/* .carre:hover {
+	width: 60vw;
+	height: 50vh;
+}
+
+
+body:hover .carre {
+	background-color: #ee7752;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 1;
+
+}
+
+body:hover .carre .textCarre {
+	opacity: 1;
+	transition-delay: 1s;
+	transform: rotate(360deg);
+}
+
+.carre .textCarre {
+	opacity: 0;
+	transition: all 0.3s ease-in;
+	transform: rotate(0);
+}
+
+.carre:hover .textCarre {
+	opacity: 1;
+	background-color: #fff;
+	color: black;
+	padding: 30px;
+	border-radius: 30px;
+}
+
+.carre:hover .textCarre:hover {
+	background-color: black;
+	color: #fff;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+	rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+	rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+	rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+	rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.test {
+    text-align: center;
+    line-height: 100vh;
+	height: 100vh;
+	width: 100vw;
+    font-size: 20em;
+    color: #fff;
+} */
+
+/* .test {
+    animation: test 2s ease-in 0s 1 normal forwards;
+}
+
+@keyframes test {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateY(-45px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(-24px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(-12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(-6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+} */
+
+/* .carre:hover {
+	width: 100vw;
+}*/
+
+
+
+   
+/* @keyframes gradient {
+   0% {
+       background-position: 0% 50%;
+       }
+    50% {
+       background-position: 100% 50%;
+       }
+   100% {
+       background-position: 0% 50%;
+       }
+   } */
+
