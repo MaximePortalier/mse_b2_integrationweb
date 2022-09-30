@@ -18,6 +18,11 @@ body {
     background: blue;
 } */
 
-.bleu {
+.backgroundBlue {
     background: blue;
+}
+
+.carre:hover {
+    background: violet;
+    transform: translateY(4px);
 }
