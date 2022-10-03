@@ -1,0 +1,243 @@
+@font-face {
+    font-family: Animal-Bold;
+    src: local("Animal"),
+    url(../font/Animal-Bold.ttf);
+}
+
+body {
+    background: #1b1b1b;
+    height: 100vh;
+    width: 100vw;
+    font-size: 20px;
+    font-family: Animal-Bold;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.background {
+    z-index: -10;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.8;
+}
+
+.accueil {
+    display: flex;
+}
+
+.mesCompetences {
+    display: flex;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 7vw;
+    height: 100vh;
+    background: #1b1b1b;
+    /* border-right: 1px solid #9200E0; */
+    box-shadow: rgba(146,0,224,0.5) 0px 54px 55px;
+    position: fixed;
+}
+
+.logo, .ensembleIcones {
+    width: 90px;
+    height: 90px;
+}
+
+.logoLinkedin {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5vh;
+}
+
+.logoLinkedin:hover {
+    background: #9200E0;
+    border-color: #9200E0;
+}
+
+.infosAccueilGauche {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 53vw;
+    height: 100vh;
+    margin-left: 7vw;
+}
+
+p {
+    color:white;
+    font-size: 5em;
+}
+
+.nomDuPortfolio {
+    margin-left: 4vw;
+    color: transparent;
+    -webkit-text-stroke: 3px #fff;
+}
+
+.metier {
+    font-size: 3.5em;
+    margin-left: 4vw;
+}
+
+.infosAccueilDroite {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 40vw;
+    height: 100vh;
+}
+
+.etudes {
+    font-size: 1.2em;
+    margin-top: 5vh;
+    text-transform: uppercase;
+}
+
+.etudes, .specialitéPremiere, .SpécialitéDeuxieme {
+    margin-right: 3vw;
+}
+
+.infosAccueilDroite section {
+    margin-bottom: 12vh;
+}
+
+.specialitéPremiere, .SpécialitéDeuxieme {
+    color:#9200E0;
+    font-size: 1.5em;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-right: 7vw;
+}
+
+.SpécialitéDeuxieme {
+    color: #fff;
+}
+
+.hexAccueil, .hexBasAccueil {
+    margin-top: 7.5px;
+    width: 26px;
+    height: 15px;
+    background: #fff;
+    border-color: #fff;
+    position: absolute;
+    top:55vh;
+    left: 35vw;;
+    display: inline-block;
+    box-shadow: rgba(146,0,224, 0.80) 0px 0px 30px;
+}
+
+.hexAccueil:before, .hexBasAccueil:before {
+    content: " ";
+    width: 0; height: 0;
+    border-bottom: 7.5px solid;
+    border-color: inherit;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    position: absolute;
+    top: -7.5px;
+}
+
+.hexAccueil:after, .hexBasAccueil:after {
+    content: "";
+    width: 0;
+    position: absolute;
+    bottom: -7.5px;
+    border-top: 7.5px solid;
+    border-color: inherit;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+}
+
+.barreAccueil, .barreGaucheAccueil, .barreBasAccueil {
+    width: 35vw;
+    height: 15px;
+    position: absolute;
+    top: 56vh;
+    left: 0;
+    z-index: -1;
+    background: #fff;
+    box-shadow: rgba(146,0,224, 0.80) 0px 0px 30px;
+}
+
+.hexBasAccueil {
+    top:72vh;
+    left:78vw;
+}
+
+.barreGaucheAccueil {
+    width: 15px;
+    height: 18vh;
+    top:74vh;
+    left:78.4vw ;
+}
+
+.barreBasAccueil {
+    top: 91.2vh;
+    left: 78.38vw;
+    width: 21vw;
+    border-bottom-left-radius: 50px;
+}
+
+.fleche{
+	width: 0;
+	height: 0;
+	border-width: 15px 0 15px 50px;
+	border-color: transparent transparent transparent #FFFFFF;
+	border-style: solid;
+    position: absolute;
+    top: 47vh;
+    left: 95vw;
+    opacity: 0.8;
+}
+
+.fleche:hover {
+    border-color: transparent transparent transparent #9200E0;
+    transform: scale(0.95);
+}
+
+.rondGauche, .rondMilieu, .rondDroite {
+    width: 12px;
+    height: 12px;
+    border-radius: 100px;
+    border: 1px solid white;
+    background:#fff;
+    display: block;
+    position: absolute;
+    top: 48vh;
+    left: 89vw;
+    background: #fff;
+    opacity: 0.3;
+}
+
+
+.rondMilieu {
+    left:91vw;
+    opacity: 0.5;
+}
+
+.rondDroite {
+    left: 93vw;
+    opacity: 0.7;
+}
+
+.trait {
+    width: 5vw;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    top: 48.8vh;
+    left: 83vw;
+    opacity: 0.2;
+}
