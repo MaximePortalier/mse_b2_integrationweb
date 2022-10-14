@@ -1,0 +1,45 @@
+body {
+    background-color: violet;
+}
+
+/* CSS PURE */
+.carre p span {
+    /* je stylise la span */
+}
+.carre p span.toto {
+    /* je stylise la span */
+}
+
+/* VARIABLES LESS */
+@primaryColor: blue;
+@padding: 16px;
+@box-shadow: 0 0 20px black;
+
+/* MIXINS LESS */
+.defaultBackground {
+    background-color: rgb(214, 214, 214);
+    border-radius: 3px;
+    padding: 16px;
+    color: #454545;
+}
+/* LESS */
+.carre {
+    p {
+        .defaultBackground();
+    }
+    div {
+        color: blue;
+
+        &.toto {
+            .defaultBackground();
+
+            & span {
+                color: black;
+            }
+
+            &:first-letter {
+                color: yellow;
+            }
+        }
+    }
+}

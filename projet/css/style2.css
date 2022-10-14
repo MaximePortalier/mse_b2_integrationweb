@@ -1,0 +1,40 @@
+body {
+  background-color: violet;
+}
+/* CSS PURE */
+.carre p span {
+  /* je stylise la span */
+}
+.carre p span.toto {
+  /* je stylise la span */
+}
+/* VARIABLES LESS */
+/* MIXINS LESS */
+.defaultBackground {
+  background-color: #d6d6d6;
+  border-radius: 3px;
+  padding: 16px;
+  color: #454545;
+}
+/* LESS */
+.carre p {
+  background-color: #d6d6d6;
+  border-radius: 3px;
+  padding: 16px;
+  color: #454545;
+}
+.carre div {
+  color: blue;
+}
+.carre div.toto {
+  background-color: #d6d6d6;
+  border-radius: 3px;
+  padding: 16px;
+  color: #454545;
+}
+.carre div.toto span {
+  color: black;
+}
+.carre div.toto:first-letter {
+  color: yellow;
+}

@@ -1,0 +1,32 @@
+body {
+  background-color: dimgrey;
+}
+.defaultBloc {
+  background: white;
+  padding: 16px;
+  border: 2px solid red;
+  margin: 10px;
+}
+.bouton {
+  font-size: 20px;
+  background-color: aqua;
+}
+.titre {
+  font-size: 20px;
+}
+section {
+  background: white;
+  padding: 16px;
+  border: 2px solid red;
+  margin: 10px;
+}
+section h1 {
+  font-size: 20px;
+}
+section button {
+  font-size: 20px;
+  background-color: aqua;
+}
+section button.anotherButton {
+  background-color: chartreuse;
+}
